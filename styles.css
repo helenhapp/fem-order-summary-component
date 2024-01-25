@@ -1,0 +1,141 @@
+/* :root {
+
+} */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+p {
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    line-height: 1.1;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 500;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+button, a {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    background-color: hsl(225, 100%, 98%);
+    background-image: url("images/pattern-background-desktop.svg");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 50rem) {
+    .container {
+        background-image: url("images/pattern-background-mobile.svg");
+    }
+}
+
+.card {
+    background-color: #ffffff;
+    max-width: 25rem;
+    border-radius: 1.5rem;
+}
+
+.hero img {
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.card-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    text-align: center;
+}
+
+.card-content p {
+    color: hsl(224, 23%, 55%);
+}
+
+.plan {
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-radius: .75rem;
+}
+
+.plan span {
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+
+.plan img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.plan .chosen-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    cursor: pointer;
+    padding: .75rem;
+    font-weight: 700;
+}
+
+.pay {
+    color: hsl(225, 100%, 98%);
+    background-color: hsl(245, 75%, 52%);
+    border: 0;
+    border-radius: .5rem;
+    box-shadow: 0 12px 30px hsla(245, 75%, 52%, 0.4);
+}
+
+.pay:hover {
+    background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+.plan a {
+    color: hsl(245, 75%, 52%);
+}
+
+.plan a:hover {
+    color: hsla(245, 75%, 52%, 0.7);
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
